@@ -14,6 +14,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
+        //下面这两个是对话框插件启用模糊效果
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
     }
 
     buildTypes {
@@ -21,6 +24,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    // Butterknife requires Java 8.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
 }
@@ -32,4 +41,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'com.kongzue.dialog:dialog:2.4.8'//空祖对话框插件
+    implementation 'com.loopj.android:android-async-http:1.4.3'//发送http请求的第三方开源库
+    implementation 'com.github.HanHuoBin:BaseDialog:1.2.0'//对话框
 }
