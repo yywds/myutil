@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Date.NowLibrary">
+
+    <com.hanks.htextview.fade.FadeTextView
+        android:id="@+id/textview"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_70"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_marginTop="@dimen/dp_50"
+        android:textColor="#00aeff"
+        android:textSize="@dimen/sp_30"
+        android:text="请选择单词库"
+        app:animationDuration="1500"/>
+
+
+
+    <cn.addapp.pickers.widget.WheelListView
+        android:id="@+id/select_ciku"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_300">
+    </cn.addapp.pickers.widget.WheelListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        >
+        <TextView
+            android:layout_height="@dimen/dp_35"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textSize="@dimen/sp_20"
+            android:text="当前："
+            />
+        <TextView
+            android:id="@+id/last_ciku"
+            android:layout_height="@dimen/dp_35"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textSize="@dimen/sp_20" />
+        <TextView
+            android:layout_height="@dimen/dp_35"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textSize="@dimen/sp_20"
+            android:text="修改：" />
+        <TextView
+            android:id="@+id/now_ciku"
+            android:layout_height="@dimen/dp_35"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="@dimen/sp_20" />
+    </LinearLayout>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/sure"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_40"
+        android:text="确定选择"
+        android:textColor="#00aeff"
+        android:textSize="@dimen/sp_15"
+        />
+
+
+
+
+
+</LinearLayout>

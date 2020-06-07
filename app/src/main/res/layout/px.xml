@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+   android:background="#e6e6e6"
+    android:layout_centerVertical="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+
+        android:background="@drawable/coner"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_marginTop="30dp"
+        android:text="单词"
+        android:gravity="center"
+        android:textColor="#000"
+        android:maxLines="1"
+        android:textSize="25dp"
+        android:ellipsize="end"
+        android:maxWidth="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+       <LinearLayout
+           android:id="@+id/top2"
+           android:layout_below="@id/tv_name"
+           android:layout_marginTop="20dp"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/tv_yinbiao"
+               android:text="[ˈsæləri] "
+               android:gravity="center"
+               android:maxLines="1"
+               android:textSize="20dp"
+               android:ellipsize="end"
+               android:maxWidth="200dp"
+               android:layout_marginLeft="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <ImageView
+               android:layout_below="@id/tv_name"
+               android:id="@+id/bofang"
+               android:layout_marginTop="2dp"
+               android:layout_marginLeft="5dp"
+               android:layout_toRightOf="@id/tv_yinbiao"
+               android:background="@drawable/bofang2"
+               android:layout_width="25dp"
+               android:layout_height="25dp"/>
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_mean"
+            android:layout_marginTop="13dp"
+            android:text="n. 薪金，薪水 "
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_below="@id/top2"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        
+        <RelativeLayout
+            android:layout_below="@id/tv_mean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <EditText
+                android:id="@+id/px"
+                android:gravity="center"
+                android:hint="请开始拼写单词"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="验证"
+                android:id="@+id/btn_tijiao"
+                android:layout_below="@+id/px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/shape"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

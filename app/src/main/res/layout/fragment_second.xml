@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorraydandan"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".Fragment.SecondFragment">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_marginTop="40dp"
+        android:id="@+id/go_to_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        fancy:fb_iconResource="@drawable/mysearch"
+        fancy:fb_defaultColor="#fff"
+        fancy:fb_text="点击查询单词"
+        fancy:fb_borderWidth="@dimen/dp_0_5"
+        fancy:fb_borderColor="@color/colorline"
+        fancy:fb_radius="10dp"
+        fancy:fb_iconPaddingRight="@dimen/dp_20"
+        fancy:fb_iconPaddingTop="18dp"
+        fancy:fb_focusColor="@color/colorrige"
+        fancy:fb_textColor="@color/colorshengzi"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorshengzi"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="15dp"
+        android:text="单词本"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/b">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/shoucang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/dancishoucang"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorshengzi"
+                android:text="收藏单词本"/>
+
+
+        </LinearLayout>
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:background="@color/colorline"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginLeft="13dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/pxshoucang"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textColor="@color/colorshengzi"-->
+<!--                android:text="拼写单词本"/>-->
+
+
+
+<!--        </LinearLayout>-->
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

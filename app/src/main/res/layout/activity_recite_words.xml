@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Date.recite_words">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_410"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_78"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/key"
+                android:layout_width="@dimen/dp_300"
+                android:layout_height="@dimen/dp_65"
+                android:layout_marginStart="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_100"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginEnd="@dimen/dp_150"
+                android:layout_marginRight="@dimen/dp_150"
+                android:gravity="center_vertical"
+                android:text="Test"
+                android:textSize="@dimen/sp_30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <!--AllPron发音-->
+        <LinearLayout
+            android:id="@+id/AllPron"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_27"
+                android:layout_marginTop="@dimen/dp_6"
+                >
+
+                <ImageButton
+                    android:id="@+id/Evoice"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/voice"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="英:"
+                    android:textSize="17sp"
+                    />
+                <TextView
+                    android:id="@+id/Epron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_27"
+                android:layout_marginTop="@dimen/dp_14"
+                >
+
+                <ImageButton
+                    android:id="@+id/Avoice"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/voice"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="美:"
+                    android:textSize="17sp"
+                    />
+                <TextView
+                    android:id="@+id/Apron"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="17sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--AllMean意思-->
+        <LinearLayout
+            android:id="@+id/AllMean"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_90"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/jiantou"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dp_6"
+                    android:text="基本释义："
+                    android:textSize="20sp"
+                    android:textColor="#00aeff"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_32"
+                >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:id="@+id/scrollView2"
+                    >
+                    <TextView
+                        android:id="@+id/mean"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_3"
+                        android:paddingRight="@dimen/dp_6"
+                        android:paddingBottom="@dimen/dp_3"
+                        android:textSize="15dp"
+                        />
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--AllSent例句-->
+        <LinearLayout
+            android:id="@+id/AllSent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                >
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/jiantou" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dp_6"
+                    android:text="例句："
+                    android:textColor="#00aeff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_32"
+                >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_110"
+                    android:id="@+id/meanbottom"
+                    >
+                    <TextView
+                        android:id="@+id/sent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_3"
+                        android:paddingRight="@dimen/dp_6"
+                        android:paddingBottom="@dimen/dp_3"
+                        android:textSize="15dp"
+                        />
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/next_word"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_54"
+        android:layout_marginTop="@dimen/dp_472"
+        android:layout_marginEnd="@dimen/dp_60"
+        android:layout_marginRight="@dimen/dp_60"
+        android:textSize="@dimen/sp_15"
+        android:textColor="#00aeff"
+        android:text="认识"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/add_button"
+        android:visibility="invisible"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_54"
+        android:layout_marginStart="@dimen/dp_60"
+        android:layout_marginLeft="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_472"
+        android:text="加入生词本"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/setsee"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_54"
+        android:layout_marginStart="@dimen/dp_60"
+        android:layout_marginLeft="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_472"
+        android:layout_marginBottom="@dimen/dp_160"
+        android:textColor="#00aeff"
+        android:textSize="@dimen/sp_15"
+        android:text="不认识"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

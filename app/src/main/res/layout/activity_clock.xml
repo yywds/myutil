@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorOrig"
+    android:padding="15dp"
+    tools:context=".Activity.ClockActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/mrtx_fanhui"
+        android:src="@drawable/fanhui"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="每日提醒"
+        android:gravity="center"
+        android:textColor="@color/colorshengzi"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/black"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_height="450dp">
+
+
+
+
+        <!-- timePickerMode取值spinner表示下拉框风格，取值clock表示钟表风格 -->
+        <TimePicker
+            android:id="@+id/tp_time"
+            android:paddingTop="30dp"
+            android:paddingBottom="40dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:timePickerMode="spinner"
+            android:gravity="center"
+            android:spinnersShown="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_small"
+                android:layout_marginRight="10dp"
+                android:text="确定"
+                android:textSize="15dp"
+                android:id="@+id/btn_ok"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/delect"
+                android:background="@drawable/button_small"
+                android:layout_marginLeft="10dp"
+                android:text="取消"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
